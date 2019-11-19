@@ -65,7 +65,12 @@ Breadboard
 
 Wheels
 
-Controller
+Remote
+
+Rubber duck
+
+Mask
+
 
 ## Source Code
 
