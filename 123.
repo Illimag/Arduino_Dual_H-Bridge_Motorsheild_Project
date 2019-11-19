@@ -63,6 +63,8 @@ void right(){
   digitalWrite(IN3, LOW);
   digitalWrite(IN4, HIGH);
 
+}
+
 void setup() {
   Serial.begin(19200);
   Serial.println("Startup");
@@ -80,29 +82,29 @@ void loop() {
   if (irrecv.decode(&results)) {
     Serial.println(results.value);
 
-//    if (results.value == 16621663) {
-//      forward();
-//      delay(500);
-//      stop();
-//    }
-//
-//    if (results.value == 16625743) {
-//      backword();
-//      delay(500);
-//      stop();
-//    }
-//
-//    if (results.value == 16601263) {
-//      right();
-//      delay(500);
-//      stop();
-//    }
-//
-//     if (results.value == 16584943) {
-//      left();
-//      delay(500);
-//      stop();
-//    }
+    if (results.value == 16621663) {
+      forward();
+      delay(500);
+      stop();
+    }
+
+    if (results.value == 16625743) {
+      backword();
+      delay(500);
+      stop();
+    }
+
+    if (results.value == 16601263) {
+      right();
+      delay(500);
+      stop();
+    }
+
+     if (results.value == 16584943) {
+      left();
+      delay(500);
+      stop();
+    }
  
     irrecv.resume();    
 
